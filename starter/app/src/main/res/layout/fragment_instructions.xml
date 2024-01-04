@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="match_parent"
         tools:context=".InstructionsFragment">
 
         <TextView
+            android:textSize="16sp"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="wrap_content"
+            android:text="In the next page you will find list of shoes" />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+Click on them to view details or click on FAB to add a new shoe" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:layout_marginTop="15dp"
+  android:id="@+id/button_shoe_list"
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
