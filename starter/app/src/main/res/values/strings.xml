@@ -2,4 +2,28 @@
     <string name="app_name">ShoeStore</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_shoe_size">enter shoe size</string>
+    <string name="description">Description</string>
+    <string name="enter_description">enter description</string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="enter_company">enter company</string>
+    <string name="company">Company</string>
+    <string name="enter_shoe_name">enter shoe name</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="enter_shoe_details">Enter Shoe Details</string>
+    <string name="logout">Logout</string>
+    <string name="in_the_next_page_you_will_find_list_of_shoes">In the next page you will find list of shoes</string>
+    <string name="click_on_them_to_view_details_or_click_on_fab_to_add_a_new_shoe">Click on them to view details or click on FAB to add a new shoe</string>
+    <string name="next">Next</string>
+    <string name="enter_email">enter email</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="enter_password">enter password</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="welcome">Welcome</string>
+    <string name="this_app_lets_you_create_a_list_of_shoes">This app lets you create a list of shoes</string>
+    <string name="click_for_instructions">Click for Instructions</string>
 </resources>

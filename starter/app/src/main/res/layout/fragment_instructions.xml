@@ -16,20 +16,19 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="In the next page you will find list of shoes" />
+            android:text="@string/in_the_next_page_you_will_find_list_of_shoes" />
         <TextView
             android:layout_marginTop="15dp"
             android:textSize="16sp"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="
-Click on them to view details or click on FAB to add a new shoe" />
+            android:text="@string/click_on_them_to_view_details_or_click_on_fab_to_add_a_new_shoe" />
 
         <Button
             android:layout_marginTop="15dp"
   android:id="@+id/button_shoe_list"
-            android:text="Next"
+            android:text="@string/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 />

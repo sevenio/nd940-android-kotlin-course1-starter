@@ -16,7 +16,7 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome" />
+            android:text="@string/welcome" />
 
         <TextView
             android:layout_marginTop="20dp"
@@ -25,14 +25,14 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This app lets you create a list of shoes" />
+            android:text="@string/this_app_lets_you_create_a_list_of_shoes" />
 
 
 
         <Button
             android:id="@+id/button_instructions"
             android:layout_marginTop="15dp"
-            android:text="Click for Instructions"
+            android:text="@string/click_for_instructions"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
