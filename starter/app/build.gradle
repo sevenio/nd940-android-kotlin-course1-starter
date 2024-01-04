@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace 'com.udacity.shoestore'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.udacity.shoestore"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -48,8 +48,9 @@ dependencies {
     implementation "com.jakewharton.timber:timber:5.0.1"
 
     // Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
-    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.7.6"
+    implementation "androidx.navigation:navigation-ui-ktx:2.7.6"
+
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
