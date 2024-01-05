@@ -8,13 +8,18 @@ import com.udacity.shoestore.models.Shoe
 class MainViewmodel: ViewModel() {
 
     val shoeListLiveData: MutableLiveData<ArrayList<Shoe>?> = MutableLiveData(arrayListOf())
+    val name : MutableLiveData<String> = MutableLiveData()
+    val size  : MutableLiveData<String> = MutableLiveData()
+    val company : MutableLiveData<String> = MutableLiveData()
+    val description : MutableLiveData<String> = MutableLiveData()
 
 
-    fun addShoe(shoe: Shoe){
+    fun addShoe(){
+        val shoe = Shoe(name = name.value?:"", company = company.value?:"", size = size.value?.toDoubleOrNull()?:0.0, description = description.value?:"")
         val arrayList = shoeListLiveData.value
         arrayList?.add(shoe)
-        Log.d("gan", "$arrayList")
         shoeListLiveData.postValue(arrayList)
+
     }
 
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-
+    <!-- Simple vertical stack of different types of ui elements. Linear layout is best for such cases. -->
     <androidx.appcompat.widget.LinearLayoutCompat
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_margin="20dp"

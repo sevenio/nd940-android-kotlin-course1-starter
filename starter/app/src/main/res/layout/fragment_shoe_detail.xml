@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.MainViewmodel" />
 
+    </data>
+    <!-- If we use linearlayout it will lead to nested linearlayouts which is bad for performance. Using constraintlayout prevents nesting.-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_margin="20dp"
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -33,6 +39,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_shoe_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/et_company"
+            android:text="@={viewModel.name}"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:hint="@string/enter_shoe_name" />
@@ -52,6 +59,8 @@
             app:layout_constraintStart_toEndOf="@id/et_shoe_name"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="0dp"
+            android:text="@={viewModel.company}"
+
             android:layout_height="wrap_content"
             android:hint="@string/enter_company" />
         <TextView
@@ -72,6 +81,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/et_description"
             android:layout_width="0dp"
+            android:text="@={viewModel.size}"
+
             android:layout_height="wrap_content"
             android:hint="@string/enter_shoe_size" />
         <TextView
@@ -89,6 +100,8 @@
             app:layout_constraintStart_toEndOf="@id/et_shoe_size"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="0dp"
+            android:text="@={viewModel.description}"
+
             android:layout_height="wrap_content"
             android:hint="@string/enter_description" />
 

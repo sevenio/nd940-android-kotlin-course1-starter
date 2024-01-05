@@ -30,6 +30,8 @@ class ShoeDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container,false)
+        binding.lifecycleOwner = this
+        binding.viewModel = viewmodel
         return binding.root
     }
 
@@ -39,22 +41,15 @@ class ShoeDetailFragment : Fragment() {
             view.findNavController().navigateUp()
         }
         binding.buttonSave.setOnClickListener {
-            viewmodel.addShoe(Shoe(name = binding.etShoeName.text.toString(), company = binding.etCompany.text.toString(), size = binding.etShoeSize.text.toString().toDoubleOrNull()?:0.0, description = binding.etDescription.text.toString()))
+            viewmodel.addShoe()
             view.findNavController().navigateUp()
         }
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ShoeDetailFragment.
-         */
+
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance() =
             ShoeDetailFragment().apply {
                 arguments = Bundle().apply {
 

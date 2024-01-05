@@ -18,10 +18,7 @@ import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 class WelcomeFragment : Fragment() {
 
 private lateinit var binding: FragmentWelcomeBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,16 +37,9 @@ private lateinit var binding: FragmentWelcomeBinding
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment WelcomeFragment.
-         */
+
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance() =
             WelcomeFragment().apply {
 
             }
